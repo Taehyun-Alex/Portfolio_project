@@ -1,0 +1,7 @@
+node_modules/
+
+### ignore the .idea folder and all its contents
+.idea
+.idea/
+.idea/*
+.idea/**
