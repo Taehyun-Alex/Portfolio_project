@@ -5,9 +5,66 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/css/site.css"/>
+    <script src="Assets/js/main.js"></script>
+    <title>Home Page</title>
 </head>
-<body>
+<body class="bg-gradient-to-br from-slate-700 via-slate-800 to-slate-900 bg-no-repeat bg-fixed">
+<header class="sticky top-0 w-full">
+    <nav class="flex justify-end p-4">
+        <button id="toggleBtn" class="lg:hidden text-white">☰</button>
+        <ul id="navLinks" class="flex-row space-x-12 hidden lg:flex">
+            <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="text-teal-400 transform hover:scale-105">
+                <a href="about.html">About</a></li>
+            <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                <a href="experiences.html">Experience</a>
+            </li>
+            <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                <a href="skills.html">Skills</a>
+            </li>
+            <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                <a href="projects.html">Projects</a>
+            </li>
+            <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+        <button id="resumeBtn" class="lg:flex hidden text-white mx-12 font-semibold border-2 px-2 rounded-lg hover:bg-teal-400 transform hover:scale-105">Resume</button>
+        <div id="mobileMenu" class="hidden lg:hidden">
+            <button id="closeBtn" class="mb-4 text-white">✕</button>
+            <ul class="flex flex-col space-y-3">
+                <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="text-teal-400 transform hover:scale-105">
+                    <a href="about.html">About</a></li>
+                <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                    <a href="experiences.html">Experience</a>
+                </li>
+                <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                    <a href="skills.html">Skills</a>
+                </li>
+                <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                    <a href="projects.html">Projects</a>
+                </li>
+                <li class="text-white hover:text-teal-400 transform hover:scale-105">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+            <!-- Resume button for mobile -->
+            <button id="resumeBtnMobile" class="mt-4 text-white mx-12 font-semibold border-2 px-2 rounded-lg hover:bg-teal-400 transform hover:scale-105">Resume</button>
+        </div>
+    </nav>
+</header>
+<main class="mt-3 lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-center lg:items-start lg:py-24 ml-32 mr-32">
+    <h1 class="text-slate-400 text-5xl mt-32">I wish to be a <span class="text-white">software engineer</span></h1>
+    <p class="mt-4 text-slate-400">I am a student in <span class="text-teal-400">Cert IV</span> in <span class="text-teal-400">Information Technology</span></p>
+    <p class="mt-4 text-slate-400">I studied at North Metropolitan TAFE</p>
+    <p class="mt-4 text-slate-400">I will continue to study <span class="text-teal-400">Diploma</span> in IT</p>
 
+</main>
 </body>
 </html>
