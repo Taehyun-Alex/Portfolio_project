@@ -708,6 +708,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-teal-900 {
+  --tw-text-opacity: 1;
+  color: rgb(19 78 74 / var(--tw-text-opacity));
+}
+
 .hover\:scale-105:hover {
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
