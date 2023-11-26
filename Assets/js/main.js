@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var toggleBtn = document.getElementById('toggleBtn');
-    var closeBtn = document.getElementById('closeBtn');
-    var mobileMenu = document.getElementById('mobileMenu');
-    var navLinks = document.getElementById('navLinks')
-    var resumeBtn = document.getElementById('resumeBtn')
-    var resumeBtnMobile = document.getElementById('resumeBtnMobile')
+    let toggleBtn = document.getElementById('toggleBtn');
+    let closeBtn = document.getElementById('closeBtn');
+    let mobileMenu = document.getElementById('mobileMenu');
+    let navLinks = document.getElementById('navLinks')
+    let resumeBtn = document.getElementById('resumeBtn')
+    let resumeBtnMobile = document.getElementById('resumeBtnMobile')
+    let homeReload = document.getElementById("homeReload");
 
     toggleBtn.addEventListener('click', function () {
         mobileMenu.classList.toggle('hidden');
@@ -29,25 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
             resumeBtnMobile.classList.add('hidden');
         }
     });
-    resumeBtn.addEventListener('click', handleResumeButtonClick);
-    resumeBtnMobile.addEventListener('click', handleResumeButtonClick);
+
+    // home button reload
+    homeReload.addEventListener('click', function (event) {
+        event.preventDefault();
+        location.reload();
+    }) ;
 
 });
-function handleResumeButtonClick() {
-    var link = document.createElement("a");
-    link.href = "https://drive.google.com/uc?export=download&id=1lZJeN3GZJWFLB7HZQ777llS1DEWHt9FT";
-    link.download = "Alex Sung - Resume.docx";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
 
-// home button reload
-var homeReload = document.getElementById("homeReload");
-homeReload.addEventListener('click', function (event) {
-    event.preventDefault();
-    location.reload();
-}) ;
+
 
 
 
